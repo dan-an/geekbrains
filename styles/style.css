@@ -1574,3 +1574,11 @@
     .total span {
         margin-left: 20px;
     }
+    
+    .product {
+        display: flex;
+    }
+    
+    .marketplace {
+        display: flex;
+    }
