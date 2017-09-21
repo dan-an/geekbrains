@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9ab0f0d9eb.js"></script>
+    <title>Single</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="center">
+        <div class="header__menu">
+            <a class="logo" href="#"><img src="./../img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
+            </a>
+            <div class="header__filter">
+                <form action="">
+                    <select class="filter__select" name="" id="">
+                        <option disabled selected>Browse</option>
+                        <option>Women</option>
+                        <option>Dresses</option>
+                        <option>Tops</option>
+                        <option>Sweaters/Knits</option>
+                        <option>Jackets/Coats</option>
+                        <option>Blazers</option>
+                        <option>Denim</option>
+                        <option>Leggings/Pants</option>
+                        <option>Skirts/Shorts</option>
+                        <option>Accessories</option> 
+                        <option>Bags/Purses</option>
+                        <option>Swimwear/Underwear</option>
+                        <option>Nightwear</option>
+                        <option>Shoes</option>
+                        <option>Beauty</option>
+                        <option>Men<option>
+                        <option>Tees/Tank tops</option>
+                        <option>Shirts/Polos</option>
+                        <option>Sweaters</option>
+                        <option>Sweatshirts/Hoodies</option>
+                        <option>Blazers</option>
+                        <option>Jackets/vests</option>
+                    </select>
+                    <input type="search" class="search__feild" name="filter" placeholder="Search for Item...">
+                    <input type="submit" class="button search__button" value="">
+                </form>
+            </div>
+            <div class="cart">
+                <a href="javascript:void(0)"></a>
+                <div class="cart__dropdown">
+                    <div class="triangle"></div>
+                    <div class="cart__dropdown-item">
+                        <div class="cart__item-img"></div>
+                        <div class="cart__item-info">
+                            <div class="cart__item-name">Rebox Zane</div>
+                            <div class="cart__item-rating"></div>
+                            <div class="cart__item-price red">1 x $250</div>
+                        </div>
+                    </div>
+                    <div class="cart__dropdown-item">
+                        <div class="cart__item-img"></div>
+                        <div class="cart__item-info">
+                            <div class="cart__item-name">Rebox Zane</div>
+                            <div class="cart__item-rating"></div>
+                            <div class="cart__item-price red">1 x $250</div>
+                        </div>
+                    </div>
+                    <div class="cart__dropdown-total">
+                        <h3>TOTAL</h3>
+                        <h3>$500.00</h3>
+                    </div>
+                    <div class="cart__dropdown-button"><a href="javascript:void(0)">Checkout</a></div>
+                    <div class="cart__dropdown-button"><a href="#account">Go to cart</a></div>
+                </div>
+            </div>
+            <div class="button button__account button__red"><a href="#account">My Account</a></div>
+        </div>
+        <nav>
+            <ul class="nav__menu center">
+                <li><a href="javascript:void(0)">Home</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Man</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Women</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Kids</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Accoseriese</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Featured</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)">Hot Deals</a>
+                    <div class="nav__dropdown">
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                            <li><a href="javascript:void(0)">Blazers</a></li>
+                            <li><a href="javascript:void(0)">Denim</a></li>
+                            <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                            <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                        </ul>
+                        <ul class="nav__dropdown__col">
+                            <li>
+                                <h3>Women</h3>
+                            </li>
+                            <li><a href="javascript:void(0)">Dresses</a></li>
+                            <li><a href="javascript:void(0)">Tops</a></li>
+                            <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                            <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="nav__dropdown__col__offer">
+                            <h2>Super sale!</h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav__dropdown">
+                <ul class="nav__dropdown__col">
+                    <li>
+                        <h3>Women</h3>
+                    </li>
+                    <li><a href="javascript:void(0)">Dresses</a></li>
+                    <li><a href="javascript:void(0)">Tops</a></li>
+                    <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                    <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                    <li><a href="javascript:void(0)">Blazers</a></li>
+                    <li><a href="javascript:void(0)">Denim</a></li>
+                    <li><a href="javascript:void(0)">Leggings/Pants</a></li>
+                    <li><a href="javascript:void(0)">Skirts/Shorts</a></li>
+                    <li><a href="javascript:void(0)">Accessories</a></li>
+                </ul>
+                <ul class="nav__dropdown__col">
+                    <li>
+                        <h3>Women</h3>
+                    </li>
+                    <li><a href="javascript:void(0)">Dresses</a></li>
+                    <li><a href="javascript:void(0)">Tops</a></li>
+                    <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                    <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                </ul>
+                <ul class="nav__dropdown__col">
+                    <li>
+                        <h3>Women</h3>
+                    </li>
+                    <li><a href="javascript:void(0)">Dresses</a></li>
+                    <li><a href="javascript:void(0)">Tops</a></li>
+                    <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                </ul>
+                <ul class="nav__dropdown__col">
+                    <li>
+                        <h3>Women</h3>
+                    </li>
+                    <li><a href="javascript:void(0)">Dresses</a></li>
+                    <li><a href="javascript:void(0)">Tops</a></li>
+                    <li><a href="javascript:void(0)">Sweaters/Knits</a></li>
+                    <li><a href="javascript:void(0)">Jackets/Coats</a></li>
+                </ul>
+                <div class="nav__dropdown__col__offer">
+                    <h2>Super sale!</h2>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="arrivals">
+            <div class="center">
+                <div class="arrivals__content">
+                    <div class="arrivals__title">
+                        <h2 class="red">New Arrivals</h2>
+                    </div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Men</a></li>
+                            <li class="active"><a href="javascript:void(0)">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="single__item">
+            <article class="single__item__img">
+                <img src="../img/single-item.png" alt="" class="single__item__img">
+            </article>
+            <article class="single__item__info center">
+                <h2 class="collection red">WOMEN COLLECTION</h2>
+                <ol class="counter single__item__info__counter">
+                    <li></li>
+                    <li class="is-active"></li>
+                    <li></li>
+                </ol>
+                <h3 class="single__item__info__name">Moschino Cheap And Chic</h3>
+                <p class="single__item__info__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                </p>
+                <article class="single__item__info__add-info">
+                    <h3 class="add-info">MATERIAL: <span>COTTON</span></h3>
+                    <h3 class="add-info">DESIGNER: <span>BINBURHAN</span></h3>
+                </article>
+                <h3 class="info__price red">$561</h3>
+                <article class="item__info__options">
+                    <div class="option">
+                        <h3 class="option__title">CHOOSE COLOR</h3>
+                        <select class="option__select">
+                            <option value="hide">Color</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <h3 class="option__title">CHOOSE size</h3>
+                        <select class="option__select">
+                            <option value="hide">Size</option>
+                            <option value="xs">xs</option>
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="l">l</option>
+                            <option value="xl">xl</option>
+                            <option value="xxl">xxl</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="option">
+                        <h3 class="option__title">quantity</h3>
+                        <input class="option__input" type="number" pattern="[0-9]">
+                    </div>
+                </article>
+                <a href="javascript:void(0)" class="button button-red button__add-to-cart">
+                    Add to Cart
+                </a>
+            </article>
+        </section>
+        <section class="add-offer">
+            <div class="title">
+                <h1>you may like also</h1>
+            </div>
+            <div class="items add-offer__items center">
+                <div class="item">
+                    <div class="item__overlay">
+                        <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
+                    </div>
+                    <img src="../img/item1.png" alt="item1" class="item__img">
+                    <div class="item__info">
+                        <h3 class="item__title">Mango People T-shirt</h3>
+                        <p class="item__price red">$52.00</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__overlay">
+                        <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
+                    </div>
+                    <img src="../img/item1.png" alt="item1" class="item__img">
+                    <div class="item__info">
+                        <h3 class="item__title">Mango People T-shirt</h3>
+                        <p class="item__price red">$52.00</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__overlay">
+                        <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
+                    </div>
+                    <img src="../img/item1.png" alt="item1" class="item__img">
+                    <div class="item__info">
+                        <h3 class="item__title">Mango People T-shirt</h3>
+                        <p class="item__price red">$52.00</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__overlay">
+                        <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
+                    </div>
+                    <img src="../img/item1.png" alt="item1" class="item__img">
+                    <div class="item__info">
+                        <h3 class="item__title">Mango People T-shirt</h3>
+                        <p class="item__price red">$52.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="center clearfix">
+                <div class="comments">
+                    <article class="comment is-active">
+                        <div class="comment__avatar" id="user1"></div>
+                        <div class="comment__info">
+                            <p class="comment__info-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                            <p class="user"><span class="red">Bin Burhan</span> </br>
+                                Dhaka, Bd</p>
+                        </div>
+                    </article>
+                    <article class="comment">
+                        <div class="comment__avatar"></div>
+                        <div class="comment__info">
+                            <p class="comment__info-text"></p>
+                            <div class="user"></div>
+                        </div>
+                    </article>
+                    <article class="comment">
+                        <div class="comment__avatar"></div>
+                        <div class="comment__info">
+                            <p class="comment__info-text"></p>
+                            <div class="user"></div>
+                        </div>
+                    </article>
+                    <ol class="counter">
+                        <li class="is-active"></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="subscribe__form">
+                    <div class="subscribe__form-title">
+                        <h3>Subscribe</h3>
+                        <h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+                    </div>
+                    <form action="" method="post">
+                        <input type="email" name="email" id="subs__mail" placeholder="Enter Your Email">
+                        <input class="button button__red" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="prefooter center">
+            <div class="prefooter__about">
+                <a class="logo" href="#"><img src="./../img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
+                </a>
+                <div class="prefooter__about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores vero, accusantium modi dolorem quaerat? Optio nulla animi maxime aliquid. Vero officia sequi delectus iusto voluptates vitae quisquam illum animi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id animi dicta cupiditate accusamus, eos vel tenetur culpa debitis aut recusandae consequuntur omnis reiciendis possimus fugiat repellat non cum voluptatem explicabo!</p>
+                </div>
+            </div>
+            <div class="prefooter__col">
+                <h3 class="red">COMPANY</h3>
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Shop</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="javascript:void(0)">How It Works</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>
+            <div class="prefooter__col">
+                <h3 class="red">COMPANY</h3>
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Shop</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="javascript:void(0)">How It Works</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>
+            <div class="prefooter__col">
+                <h3 class="red">COMPANY</h3>
+                <ul>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Shop</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="javascript:void(0)">How It Works</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="center clearfix">
+            <div class="footer__copyright">
+                <p>© 2017 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer__networks">
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
