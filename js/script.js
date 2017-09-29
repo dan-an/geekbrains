@@ -1,5 +1,5 @@
 // Iterate over each select element
-$('select.option__select').each(function() {
+$('select').each(function() {
 
     // Cache the number of options
     var $this = $(this),
@@ -52,13 +52,12 @@ $('select.option__select').each(function() {
     $listItems.click(function(e) {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
-        if ($(this).attr('rel')) {
-            console.log("1");
+        console.log($(this).parent('#color'));
+        if ($(this).parents().is('#color')) {
             $styledSelect.prepend($colorDiv.css("background-color", $(this).attr('rel')));
         };
-        $this.val($(this).attr('rel'));
+        $(this).val($(this).attr('rel'));
         $list.hide();
-        /* alert($this.val()); Uncomment this for demonstration! */
     });
 
     // Hides the unordered list when clicking outside of it
@@ -68,3 +67,26 @@ $('select.option__select').each(function() {
     });
 
 });
+
+
+// Accordeon
+
+let accordeonButton = document.getElementsByClassName("button-accordeon");
+
+let accordeonToggle = function() {
+    this.classList.toggle("active");
+
+    console.log(1);
+
+    let accordeonList = this.nextElementSibling;
+    if (accordeonList.style.display === "flex") {
+        accordeonList.style.display = "none";
+    } else {
+        accordeonList.style.display = "flex";
+    }
+
+}
+
+for (let i = 0; i < accordeonButton.length; i++) {
+    accordeonButton[i].addEventListener('click', accordeonToggle, false);
+}
