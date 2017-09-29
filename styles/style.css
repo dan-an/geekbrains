@@ -1838,3 +1838,12 @@
     .product__offer__entry img {
         margin-bottom: 32px;
     }
+    
+    #slider-range {
+        margin-top: 25px;
+        width: 262px;
+    }
+    
+    .ui-slider-handle:focus {
+        outline: none;
+    }
