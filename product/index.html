@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Danilov Andrey</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <script src="https://use.fontawesome.com/9ab0f0d9eb.js"></script>
+    <title>Product</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,30 +21,25 @@
             </a>
             <div class="header__filter">
                 <form action="">
-                    <select class="filter__select" name="" id="">
-                        <option disabled selected>Browse</option>
-                        <option>Women</option>
-                        <option>Dresses</option>
-                        <option>Tops</option>
-                        <option>Sweaters/Knits</option>
-                        <option>Jackets/Coats</option>
-                        <option>Blazers</option>
-                        <option>Denim</option>
-                        <option>Leggings/Pants</option>
-                        <option>Skirts/Shorts</option>
-                        <option>Accessories</option> 
-                        <option>Bags/Purses</option>
-                        <option>Swimwear/Underwear</option>
-                        <option>Nightwear</option>
-                        <option>Shoes</option>
-                        <option>Beauty</option>
-                        <option>Men<option>
-                        <option>Tees/Tank tops</option>
-                        <option>Shirts/Polos</option>
-                        <option>Sweaters</option>
-                        <option>Sweatshirts/Hoodies</option>
-                        <option>Blazers</option>
-                        <option>Jackets/vests</option>
+                    <select class="filter__select">
+                        <option disabled value="hide">Browse</option>
+                        <option value = "title">Women</option>
+                        <option value = "Dresses">Dresses</option>
+                        <option value = "Tops">Tops</option>
+                        <option value = "Sweaters/Knits">Sweaters/Knits</option>
+                        <option value = "Jackets/Coats">Jackets/Coats</option>
+                        <option value = "Blazers">Blazers</option>
+                        <option value = "Denim">Denim</option>
+                        <option value = "Leggings">Leggings/Pants</option>
+                        <option value = "Skirts/Shorts">Skirts/Shorts</option>
+                        <option value = "Accessories">Accessories</option> 
+                        <option value = "title">Men<option>
+                        <option value = "Tees/Tank">Tees/Tank tops</option>
+                        <option value = "Shirts/Polos">Shirts/Polos</option>
+                        <option value = "Sweaters">Sweaters</option>
+                        <option value = "Sweatshirts/Hoodies">Sweatshirts/Hoodies</option>
+                        <option value = "Blazers">Blazers</option>
+                        <option value = "Jackets/vests">Jackets/vests</option>
                     </select>
                     <input type="search" class="search__feild" name="filter" placeholder="Search for Item...">
                     <input type="submit" class="button search__button" value="">
@@ -461,16 +458,151 @@
 
     </header>
     <main>
+        <section class="arrivals">
+            <div class="center">
+                <div class="arrivals__content">
+                    <div class="arrivals__title">
+                        <h2 class="red">New Arrivals</h2>
+                    </div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Men</a></li>
+                            <li class="active"><a href="javascript:void(0)">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="product center">
-            <section class="sidebar"></section>
+            <section class="sidebar">
+                <div class="button button-accordeon">Category</div>
+                <ul class="accordeon-list">
+                    <li>Accessories</li>
+                    <li>Bags</li>
+                    <li>Denim</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Jackets & Coats</li>
+                    <li>Pants</li>
+                    <li>Polos</li>
+                    <li>Shirts</li>
+                    <li>Shoes</li>
+                    <li>Shorts</li>
+                    <li>Sweaters & Knits</li>
+                    <li>T-Shirts</li>
+                    <li>Tanks</li>
+                </ul>
+                <div class="button button-accordeon">Category</div>
+                <ul class="accordeon-list">
+                    <li>Accessories</li>
+                    <li>Bags</li>
+                    <li>Denim</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Jackets & Coats</li>
+                    <li>Pants</li>
+                    <li>Polos</li>
+                    <li>Shirts</li>
+                    <li>Shoes</li>
+                    <li>Shorts</li>
+                    <li>Sweaters & Knits</li>
+                    <li>T-Shirts</li>
+                    <li>Tanks</li>
+                </ul>
+                <div class="button button-accordeon">Category</div>
+                <ul class="accordeon-list">
+                    <li>Accessories</li>
+                    <li>Bags</li>
+                    <li>Denim</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Jackets & Coats</li>
+                    <li>Pants</li>
+                    <li>Polos</li>
+                    <li>Shirts</li>
+                    <li>Shoes</li>
+                    <li>Shorts</li>
+                    <li>Sweaters & Knits</li>
+                    <li>T-Shirts</li>
+                    <li>Tanks</li>
+                </ul>
+            </section>
+            <article class="product__filter">
+                <div class="product__filter-element">
+                    <h3 class="filter__element-title">Trending now</h3>
+                    <ul class="trending-list">
+                        <li><a href="javascript:void(0)">Bohemian</a></li>
+                        <li><a href="javascript:void(0)">Floral</a></li>
+                        <li><a href="javascript:void(0)">Lace</a></li>
+                        <li><a href="javascript:void(0)">Floral</a></li>
+                        <li><a href="javascript:void(0)">Lace</a></li>
+                        <li><a href="javascript:void(0)">Bohemian</a></li>
+                    </ul>
+                </div>
+                <div class="product__filter-element">
+                    <h3 class="filter__element-title">Size</h3>
+                    <div class="size__filter">
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="XXS">
+                                <label for="XXS"></label>
+                            </div>
+                            <label for="XXS">XXS</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="XS">
+                                <label for="XS"></label>
+                            </div>
+                            <label for="XS">XS</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="S">
+                                <label for="S"></label>
+                            </div>
+                            <label for="S">S</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="M">
+                                <label for="M"></label>
+                            </div>
+                            <label for="M">M</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="L">
+                                <label for="L"></label>
+                            </div>
+                            <label for="L">L</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="XL">
+                                <label for="XL"></label>
+                            </div>
+                            <label for="XL">XL</label>
+                        </div>
+                        <div class="size-checkbox">
+                            <div class="size-checkbox__input">
+                                <input type="checkbox" name="" id="XXL">
+                                <label for="XXL"></label>
+                            </div>
+                            <label for="XXL">XXL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__filter-element">
+                    <h3 class="filter__element-title">pRICE</h3>
+                </div>
+            </article>
             <section class="marketplace">
                 <div class="filter"></div>
                 <div class="items">
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item2.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -478,9 +610,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item3.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -488,9 +620,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item4.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -498,9 +630,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item5.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -508,9 +640,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item6.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -518,9 +650,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item7.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -528,9 +660,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item8.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -538,9 +670,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item2.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -548,19 +680,9 @@
                     </div>
                     <div class="item">
                         <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
+                            <a href="#" class="item__overlay__button"><img src="../img/cart_white.png" alt="cart">Add to Cart</a>
                         </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
-                        <div class="item__info">
-                            <p class="item__title">Mango People T-shirt</p>
-                            <p class="item__price red">$52.00</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__overlay">
-                            <a href="#" class="item__overlay__button"><img src="./img/cart_white.png" alt="cart">Add to Cart</a>
-                        </div>
-                        <img src="./img/item2.png" alt="item2" class="item__img">
+                        <img src="../img/item2.png" alt="item2" class="item__img">
                         <div class="item__info">
                             <p class="item__title">Mango People T-shirt</p>
                             <p class="item__price red">$52.00</p>
@@ -570,6 +692,33 @@
             </section>
             <section class="advantage"></section>
         </section>
+
+        <section class="offer__promo">
+            <div class="product__offer__promo center">
+                <article class="offer__entry product__offer__entry">
+                    <img src="../img/car.png" id="car" class="offer__entry-icon"></img>
+                    <div class="offer__entry-info">
+                        <p class="offer__entry-title">Free Delivery</p>
+                        <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </article>
+                <article class="offer__entry product__offer__entry">
+                    <img src="../img/perc.png" id="perc" class="offer__entry-icon"></img>
+                    <div class="offer__entry-info">
+                        <p class="offer__entry-title">Sales &amp; discounts</p>
+                        <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </article>
+                <article class="offer__entry product__offer__entry">
+                    <img src="../img/crown.png" id="crown" class="offer__entry-icon"></img>
+                    <div class="offer__entry-info">
+                        <p class="offer__entry-title">Quality assurance</p>
+                        <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <section class="subscribe">
             <div class="center clearfix">
                 <div class="comments">
@@ -616,7 +765,7 @@
         </section>
         <section class="prefooter center">
             <div class="prefooter__about">
-                <a class="logo logo__" href="#"><img src="./img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
+                <a class="logo logo__" href="#"><img src="../img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
                 </a>
                 <div class="prefooter__about-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores vero, accusantium modi dolorem quaerat? Optio nulla animi maxime aliquid. Vero officia sequi delectus iusto voluptates vitae quisquam illum animi.</p>
@@ -671,6 +820,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -15,34 +15,29 @@
 <body>
     <header class="center">
         <div class="header__menu">
-            <a class="logo" href="#"><img src="./../img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
+            <a class="logo" href="#"><img src="./img/logo.png" alt="Logo"><span>bran<span class="red">d</span></span>
             </a>
             <div class="header__filter">
                 <form action="">
-                    <select class="filter__select" name="" id="">
-                        <option disabled selected>Browse</option>
-                        <option>Women</option>
-                        <option>Dresses</option>
-                        <option>Tops</option>
-                        <option>Sweaters/Knits</option>
-                        <option>Jackets/Coats</option>
-                        <option>Blazers</option>
-                        <option>Denim</option>
-                        <option>Leggings/Pants</option>
-                        <option>Skirts/Shorts</option>
-                        <option>Accessories</option> 
-                        <option>Bags/Purses</option>
-                        <option>Swimwear/Underwear</option>
-                        <option>Nightwear</option>
-                        <option>Shoes</option>
-                        <option>Beauty</option>
-                        <option>Men<option>
-                        <option>Tees/Tank tops</option>
-                        <option>Shirts/Polos</option>
-                        <option>Sweaters</option>
-                        <option>Sweatshirts/Hoodies</option>
-                        <option>Blazers</option>
-                        <option>Jackets/vests</option>
+                    <select class="filter__select">
+                        <option disabled value="hide">Browse</option>
+                        <option value = "title">Women</option>
+                        <option value = "Dresses">Dresses</option>
+                        <option value = "Tops">Tops</option>
+                        <option value = "Sweaters/Knits">Sweaters/Knits</option>
+                        <option value = "Jackets/Coats">Jackets/Coats</option>
+                        <option value = "Blazers">Blazers</option>
+                        <option value = "Denim">Denim</option>
+                        <option value = "Leggings">Leggings/Pants</option>
+                        <option value = "Skirts/Shorts">Skirts/Shorts</option>
+                        <option value = "Accessories">Accessories</option> 
+                        <option value = "title">Men<option>
+                        <option value = "Tees/Tank">Tees/Tank tops</option>
+                        <option value = "Shirts/Polos">Shirts/Polos</option>
+                        <option value = "Sweaters">Sweaters</option>
+                        <option value = "Sweatshirts/Hoodies">Sweatshirts/Hoodies</option>
+                        <option value = "Blazers">Blazers</option>
+                        <option value = "Jackets/vests">Jackets/vests</option>
                     </select>
                     <input type="search" class="search__feild" name="filter" placeholder="Search for Item...">
                     <input type="submit" class="button search__button" value="">
@@ -575,26 +570,26 @@
             </div>
             <div class="button button__item button__red"><a href="#browse">Browse All Product</a></div>
         </div>
-        <section class="offer center clearfix">
+        <section class="offer center">
             <p class="offer__title">30% <span class="red">OFFER</span> <span class="small">FOR WOMEN</span></p>
-            <section class="offer__promo">
+            <section class="offer__promo index__offer__promo">
                 <article class="offer__entry">
                     <img src="./img/car.png" id="car" class="offer__entry-icon"></img>
-                    <div class="offer__entry-info">
+                    <div class="main__offer__entry-info">
                         <p class="offer__entry-title">Free Delivery</p>
                         <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                     </div>
                 </article>
                 <article class="offer__entry">
                     <img src="./img/perc.png" id="perc" class="offer__entry-icon"></img>
-                    <div class="offer__entry-info">
+                    <div class="main__offer__entry-info">
                         <p class="offer__entry-title">Sales &amp; discounts</p>
                         <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                     </div>
                 </article>
                 <article class="offer__entry">
                     <img src="./img/crown.png" id="crown" class="offer__entry-icon"></img>
-                    <div class="offer__entry-info">
+                    <div class="main__offer__entry-info">
                         <p class="offer__entry-title">Quality assurance</p>
                         <p class="offer__entry-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                     </div>
@@ -702,6 +697,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
